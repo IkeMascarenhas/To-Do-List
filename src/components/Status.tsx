@@ -8,7 +8,7 @@ const Status = ({TodoItems, handleClearAll, theme}: StatusProps) => {
 
   
   return (
-    <div className={`flex justify-between p-5 text-xs ${theme=="dark" ? "text-Light-Grayish-Blue" : "text-Very-Dark-Blue"} font-bold`}>
+    <div className={`flex justify-between p-5 text-xs ${theme=="dark" ? "text-Light-Grayish-Blue" : "text-Very-Dark-Blue"} text-xs font-light`}>
       <p>{TodoItems.length} itens restantes</p>
       <button onClick={handleClearAll}>Limpar concluídos</button>
     </div>
