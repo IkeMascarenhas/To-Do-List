@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box; 
+ font-family: 'Poppins', sans-serif;
+ outline: none;
+}
+
+.Background{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(assets/img/bg-mobile-light.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+
+main img{
+    aspect-ratio: 1/1;
+}
+
+.icon{
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.Delete{
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.itemList{
+    display: grid;
+    grid-template-columns: .1fr 1fr .1fr;
+    /* align-items: center; */
+    gap: 1rem;
+}
+
+/* Estilizando o input checkbox */
+  
+  /* Adicionando um estilo personalizado ao checkbox marcado */
+
+  input[type="checkbox"]:checked + label{
+    text-decoration: line-through;
+  }
+
+.inputList{
+    width: 100%;
+}
+
+@media(min-width:600px){
+    .Background{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(assets/img/bg-desktop-dark.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain;
+    }
+}
