@@ -1,4 +1,3 @@
-import React from 'react'
 import cross from '../assets/icons/icon-cross.svg';
 
 import ListProps, {ThemeProps} from '../lib/types'

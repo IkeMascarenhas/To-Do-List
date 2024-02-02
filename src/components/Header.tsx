@@ -7,7 +7,7 @@ const icons = {
     sun
 }
 
-const Header = ({theme, setTheme, handleSwitchTheme}: ThemeProps) => {
+const Header = ({theme, handleSwitchTheme}: ThemeProps) => {
   return (
     <header className={'flex justify-between items-top font-bold h-28 max-w-md mx-auto w-11/12'}>
         <h1 className='text-3xl text-Very-Light-Gray my-12'>T O D O</h1>
