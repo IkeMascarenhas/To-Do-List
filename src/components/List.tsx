@@ -17,8 +17,12 @@ const List = ({theme}:ThemeProps) => {
   }
 
   const handleClearAll = () => {
-    let updateTodoItems = TodoItems.filter((item:any)=>{
-      return !item.checked
+    let updateTodoItems = new Array
+    TodoItems.map((item:any, index:number)=>{
+      if (item.checked == false) updateTodoItems.push(item)
+      if(item.checked == true) {
+        TodoItems.splice(index, 1)
+      }
     })
     setTodoItems(updateTodoItems)
     console.log(TodoItems)
