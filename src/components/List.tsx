@@ -51,25 +51,17 @@ const List = ({theme}:ThemeProps) => {
       setTodoItems(updateTodoItems)
       localStorage.setItem("TodoList", JSON.stringify(updateTodoItems))
     }}
-    
-    
-    // TodoItems.filter((item:any) => {
-    //   if(TodoItems.length>1) return item.id !== index
-    //   if(TodoItems.length==1) return null
-    //   // if(TodoItems.length==1){
-    //   //   return null
-    //   // }
-    //   console.log(index, item)
-    //   })/*Está filtrando o array utilizando o id, se o id for diferente o item vai para o updateTodoItems*/
-    //   console.log(updateTodoItems);
-    // setTodoItems(updateTodoItems)
-    // localStorage.setItem("TodoList", JSON.stringify(updateTodoItems))
-    // }
+
 
     const handleDeleteAll = () => {
-      if(confirm("Tem certeza?")){
+      if(TodoItems.length != 0){
+        if(confirm("Tem certeza?")){
           setTodoItems([])
       }
+      } else {
+        alert("Sua lista está vazia!")
+      }
+      
       localStorage.setItem("TodoList", JSON.stringify([]))
   }
 
