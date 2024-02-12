@@ -44,9 +44,9 @@ main img{
     gap: 1rem;
 }
 
-/* Estilizando o input checkbox */
-  
-  /* Adicionando um estilo personalizado ao checkbox marcado */
+input[type="checkbox"]{
+    accent-color: #3a7bfd;
+}
 
   input[type="checkbox"]:checked + label{
     text-decoration: line-through;
