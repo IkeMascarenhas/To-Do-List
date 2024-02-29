@@ -9,7 +9,7 @@ Essa é uma solução para o [Desafio de Todo app Frontend Mentor](https://www.f
   - [Screenshot](#screenshot)
   - [Links](#links)
   - [Tecnologias utilizadas](#built-with)
-  - [What I learned](#what-i-learned)
+  - [O que eu aprendi](#what-i-learned)
 
 
 ## Overview
@@ -32,8 +32,7 @@ Usuários devem poder:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Deploy URL: [Add live site URL here](to-do-list-pied-five.vercel.app)
 
 
 ### Built with
